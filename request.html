@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Sheger Gebeta-Request</title>
+</head>
+<body>
+     <header>
+        <h1>Sheger Gebeta</h1>
+        <p> Ethiopian Food Reviews</p>
+    </header>
+    <nav>
+        <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="request.html">Request</a></li>
+    </ul>
+    </nav>
+    <main>
+        <h1>Request a Restaurant Review</h1>
+        <p>Have a restaurant you like us to review? Fill out the form below.</p>
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <p>
+                    <label for="name">Full Name:</label><br>
+                    <input type="text" id="name" name="name" required>
+                </p>
+                <p>
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+                <p>
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone" name="phone" required>
+                </p>
+            </fieldset>
+             <fieldset>
+                <legend>Restaurant Information</legend>
+                <p>
+                    <label for="restaurant-name">Restaurant Name:</label><br>
+                    <input type="text" id="restaurant-name" name="restaurant-name" required>
+                </p>
+                <p>
+                    <label for="location">Restaurant location:</label><br>
+                    <input type="text" id="location" name="location" required>
+                </p>
+                <p>
+                    <label for="Restaurant-type">Restaurant Type:</label><br>
+                    <select id="Restaurant-type" name="Restaurant-type">
+                        <option value="">select restaurant type</option>
+                         <option value="Traditional-restaurant">Traditional Restaurant</option>
+                         <option value="Modern-restaurant">Modern Restaurant</option>
+                         <option value="Fast Food">Fast Food</option>
+                         <option value="Other-Type">Other Type</option>
+                    </select>
+                </p>
+                <p>
+                <label>Rate Your Experience:</label><br>
+                <input type="radio" id="poor" name="rate" value="poor">
+                <label for="poor">Poor</label><br>
+                <input type="radio" id="okay" name="rate" value="okay">
+                <label for="okay">Okay</label><br>
+                <input type="radio" id="good" name="rate" value="good">
+                <label for="good">Good</label><br>
+                <input type="radio" id="very-good" name="rate" value="very-good">
+                <label for="very-good">Very-Good</label><br>
+                <input type="radio" id="best" name="rate" value="best">
+                <label for="best">Best</label><br>
+                </p>
+
+               <p>
+                    <label for="specialties">Restaurant Specialties:</label><br>
+                    <textarea id="specialties" name="specialties" rows="4" cols="50" placeholder="what they are known for."></textarea>
+                </p> 
+            </fieldset>
+           <p>
+            <input type="checkbox" id="notify" name="notify" value="yes">
+            <label for="notify">I'd like to be notified when the review is published</label>
+           </p>
+            <p>
+                <input type="submit" value="Submit Review Request">
+                <input type="reset" value="Clear Form">
+            </p>
+
+
+        </form>
+    </main>
+     <footer>
+    <hr> <p>Contact: +251 11 222 3333 | info@sheger_gebeta.com</p>
+     <p>&copy;2025 Sheger Gebeta</p>
+  </footer>  
+   
+</body>
+</html>
